@@ -6,7 +6,7 @@ module Apnotic
     def initialize(http2_request)
       @http2_request = http2_request
       @headers       = {}
-      @data          = ''
+      @data          = String.new
       @events        = {}
 
       listen_for_http2_events
